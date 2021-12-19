@@ -53,7 +53,7 @@ public class ContactController {
     
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void updateContact(@RequestBody ContactRequest request, @PathVariable long idContact) {
-        this.contactService.updateContactById(idContact, request);
+    public void updateContact(@RequestBody ContactRequest request, @PathVariable long id) {
+        this.contactService.updateContactById(id, request);
     }
 }
